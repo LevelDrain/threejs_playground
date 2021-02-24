@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/LevelDrain/threejs_playground/issues"
   },
-  "homepage": "https://github.com/LevelDrain/threejs_playground#readme"
+  "homepage": "https://github.com/LevelDrain/threejs_playground#readme",
+  "devDependencies": {
+    "typescript": "^4.2.2"
+  }
 }
