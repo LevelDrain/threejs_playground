@@ -1,7 +1,7 @@
-import * as THREE from "three";
-import "core-js"; // IEで動作するようにポリフィルを導入
+import * as THREE from 'three';
+import 'core-js'; // IEで動作するようにポリフィルを導入
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener('DOMContentLoaded', () => {
   const $canvas = document.querySelector('#Canvas'),
     width = window.innerWidth,
     height = window.innerHeight;
@@ -11,12 +11,12 @@ window.addEventListener("DOMContentLoaded", () => {
   camera.position.z = 3;
 
   const renderer = new THREE.WebGLRenderer({
-    canvas: $canvas
+    canvas: $canvas,
   });
 
   const geometry = new THREE.BoxGeometry(1, 1, 1);
   const material = new THREE.MeshToonMaterial({
-    color: 0xf066aa
+    color: 0xf066aa,
   });
   const cube = new THREE.Mesh(geometry, material);
   scene.add(cube);
@@ -34,6 +34,6 @@ window.addEventListener("DOMContentLoaded", () => {
     cube.rotation.y += 0.02;
     renderer.render(scene, camera);
     requestAnimationFrame(tick);
-  }
+  };
   tick();
 });
