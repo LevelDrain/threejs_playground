@@ -3,6 +3,13 @@ module.exports = {
   // development に設定するとソースマップ有効でJSファイルが出力される
   mode: "production",
 
+  // ローカル開発用環境を立ち上げる
+  // 実行時にブラウザが自動的に localhost を開く
+  devServer: {
+    contentBase: "dist",
+    open: true
+  },
+
   // メインとなるJavaScriptファイル（エントリーポイント）
   entry: "./src/index.js",
 

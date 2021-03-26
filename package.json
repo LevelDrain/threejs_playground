@@ -1,28 +1,31 @@
 {
-  "name": "threejs_playground",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LevelDrain/threejs_playground.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LevelDrain/threejs_playground/issues"
-  },
-  "homepage": "https://github.com/LevelDrain/threejs_playground#readme",
-  "devDependencies": {
-    "@babel/core": "^7.13.10",
-    "@babel/preset-env": "^7.13.12",
-    "babel-loader": "^8.2.2",
-    "webpack": "^5.28.0",
-    "webpack-cli": "^4.5.0"
-  }
+    "name": "threejs_playground",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack",
+        "start": "webpack serve",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LevelDrain/threejs_playground.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/LevelDrain/threejs_playground/issues"
+    },
+    "homepage": "https://github.com/LevelDrain/threejs_playground#readme",
+    "devDependencies": {
+        "@babel/core": "^7.13.10",
+        "@babel/preset-env": "^7.13.12",
+        "babel-loader": "^8.2.2",
+        "webpack": "^5.28.0",
+        "webpack-cli": "^4.5.0",
+        "webpack-dev-server": "^3.11.2"
+    },
+    "private": true
 }
