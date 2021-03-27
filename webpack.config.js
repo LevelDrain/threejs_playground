@@ -4,7 +4,7 @@ module.exports = {
   devServer: {
     contentBase: 'dist',
     open: true,
-    hot: true,
+    watchContentBase: true,
   },
 
   entry: ['@babel/polyfill', './src/js/index.js'],
